@@ -1,0 +1,28 @@
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+   }
+   @media screen and (min-width:230px){
+    .container{
+    min-width:230px;
+    margin:0 auto;
+    overflow-x: hidden;
+    }}
+@media screen and (min-width:480px){
+    .container{
+    min-width:480px;
+    margin:0 auto;
+    overflow-x: hidden;
+    }}
+
+@media screen and (min-width:768px)
+{.container{
+    width:768px;
+    overflow-x: hidden;
+} }
+
+@media screen and (min-width:1200px)
+{.container{
+    width:1200px;
+    overflow-x: hidden;
+} }

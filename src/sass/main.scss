@@ -8,9 +8,19 @@
 
 @import './header';
 @import './footer';
+@import './portfolio';
+
 
 @import './clients';
 @import './about';
+
+
+@import './variables';
+@import './visually-hidden';
+
+@import './base';
+@import './container';
+@import './section';
 
 ul {
   list-style: none;
