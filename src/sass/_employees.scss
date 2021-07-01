@@ -1,0 +1,142 @@
+//Сотрудники
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.employees-section {
+  background-color: var(--secondary-background-color);
+}
+
+.employees-section__title {
+  margin-bottom: 30px;
+
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
+.employees-cards {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.employees-cards__item {
+  width: 100%;
+
+  background-color: var(--white-color);
+  font-size: 16px;
+  line-height: 1.18;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    height: auto;
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: auto;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+  }
+}
+
+.employees-cards__image {
+  width: 100%;
+  height: auto;
+}
+
+.employees-cards__caption {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
+}
+
+.employees-cards__title {
+  margin-bottom: 10px;
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.employees-cards__text {
+  margin-bottom: 16px;
+}
+
+.employee-social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.employee-social-links__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--social-links-color);
+  border-radius: 50%;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--accent);
+    border-radius: 50%;
+  }
+}
+
+.social-link__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
