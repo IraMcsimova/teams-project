@@ -1,8 +1,7 @@
-@charset "UTF-8";
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+// что бы не создавать много файлов scss я забросил классы типа секция,
+// контейнер и тд в scss _about.scss,
+// основные стили начинаются с .about
+
 h1,
 h2,
 h3,
@@ -13,26 +12,21 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-
 ul,
 ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
-
 img {
   display: block;
 }
-
 .list {
   list-style: none;
 }
-
 .link {
   text-decoration: none;
 }
-
 body {
   font-family: var(--main-font);
   color: var(--text-color);
@@ -42,7 +36,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-
+// 480+
 @media screen and (min-width: 480px) {
   .conteiner {
     width: 450px;
@@ -50,12 +44,14 @@ body {
   }
 }
 
+// 768+
 @media screen and (min-width: 768px) {
   .conteiner {
     width: 768px;
   }
 }
 
+// 1200+
 @media screen and (min-width: 1200px) {
   .conteiner {
     width: 1200px;
@@ -66,14 +62,12 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 @media screen and (min-width: 768px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
@@ -86,15 +80,13 @@ body {
     display: none;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .about {
     text-align: center;
   }
   .about-img-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
+
     margin-right: -30px;
   }
   .about-img-list-item:not(:last-child) {
@@ -106,9 +98,7 @@ body {
     line-height: 1.16;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     margin-bottom: 50px;
   }
   .about-img-list-wrapper {
@@ -132,21 +122,3 @@ body {
     height: 70px;
   }
 }
-
-:root {
-  --main-font: 'Roboto', sans-serif;
-  --accent-color: #2196f3;
-  --text-color: #212121;
-  --paragraph-color: #757575;
-  --background-color-grey: #2f303a;
-  --text-color-white: #ffffff;
-  --color-btn: #188ce8;
-  --background-color-team-filters: #f5f4fa;
-  --background-color-filters: #eeeeee;
-  --color-footer-link: rgba(255, 255, 255, 0.6);
-  --color-border: #ececec;
-  --color-client-item: #afb1b8;
-  --padding-div-projects: 20px 24px;
-  --color-icon: #afb1b8;
-}
-/*# sourceMappingURL=main.css.map */
